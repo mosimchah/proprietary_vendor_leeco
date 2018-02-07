@@ -102,8 +102,6 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/zl1/proprietary/etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin:system/etc/usf/proximity/cfg_mtp/usf_ranging_mtp_algo_transparent_data.bin \
     vendor/leeco/zl1/proprietary/etc/usf/readme.txt:system/etc/usf/readme.txt \
     vendor/leeco/zl1/proprietary/etc/usf/version.txt:system/etc/usf/version.txt \
-    vendor/leeco/zl1/proprietary/etc/UEISettings:system/etc/UEISettings \
-    vendor/leeco/zl1/proprietary/etc/init.uei.sh:system/etc/init.uei.sh \
     vendor/leeco/zl1/proprietary/lib/libLetvCameraImageSDK.so:system/lib/libLetvCameraImageSDK.so \
     vendor/leeco/zl1/proprietary/lib/libamipengine.so:system/lib/libamipengine.so \
     vendor/leeco/zl1/proprietary/lib/libarcsoft_antishaking.so:system/lib/libarcsoft_antishaking.so \
@@ -178,7 +176,6 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/zl1/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libactuator_dw9800w.so:system/vendor/lib/libactuator_dw9800w.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libactuator_lc898122.so:system/vendor/lib/libactuator_lc898122.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libactuator_lc898212xd.so:system/vendor/lib/libactuator_lc898212xd.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libchromatix_imx298_1080p_preview.so:system/vendor/lib/libchromatix_imx298_1080p_preview.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libchromatix_imx298_1080p_snapshot.so:system/vendor/lib/libchromatix_imx298_1080p_snapshot.so \
@@ -475,7 +472,6 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/zl1/proprietary/vendor/lib/libual.so:system/vendor/lib/libual.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libualutil.so:system/vendor/lib/libualutil.so \
     vendor/leeco/zl1/proprietary/vendor/lib/libusndroute.so:system/vendor/lib/libusndroute.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/leeco/zl1/proprietary/vendor/lib64/libmdtp.so:system/vendor/lib64/libmdtp.so \
     vendor/leeco/zl1/proprietary/vendor/lib64/libmdtp_crypto.so:system/vendor/lib64/libmdtp_crypto.so \
     vendor/leeco/zl1/proprietary/vendor/lib64/libmm-dspp-utils.so:system/vendor/lib64/libmm-dspp-utils.so \
@@ -483,39 +479,8 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/zl1/proprietary/vendor/lib64/libqcproximity.so:system/vendor/lib64/libqcproximity.so \
     vendor/leeco/zl1/proprietary/vendor/lib64/libual.so:system/vendor/lib64/libual.so \
     vendor/leeco/zl1/proprietary/vendor/lib64/libualutil.so:system/vendor/lib64/libualutil.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/libusndroute.so:system/vendor/lib64/libusndroute.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so
-
-#WV DRM
-PRODUCT_COPY_FILES += \
-    vendor/leeco/zl1/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so \
-    vendor/leeco/zl1/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so \
-    vendor/leeco/zl1/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
-    vendor/leeco/zl1/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
-    vendor/leeco/zl1/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:system/vendor/lib64/mediadrm/libwvdrmengine.so
-
-PRODUCT_COPY_FILES += \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b00:system/vendor/etc/firmware/widevine.b00 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b01:system/vendor/etc/firmware/widevine.b01 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b02:system/vendor/etc/firmware/widevine.b02 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b03:system/vendor/etc/firmware/widevine.b03 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b04:system/vendor/etc/firmware/widevine.b04 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b05:system/vendor/etc/firmware/widevine.b05 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.b06:system/vendor/etc/firmware/widevine.b06 \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.mdt:system/vendor/etc/firmware/widevine.mdt \
-    vendor/leeco/zl1/proprietary/vendor/etc/firmware/widevine.mbn:system/vendor/etc/firmware/widevine.mbn
+    vendor/leeco/zl1/proprietary/vendor/lib64/libusndroute.so:system/vendor/lib64/libusndroute.so
 
 PRODUCT_PACKAGES += \
     qdcm_calib_data_mdss_dsi_ft8716_1080p_video \
-    qdcm_calib_data_mdss_dsi_s6d6fa1_1080p_video \
-    LetvRemoteControl \
-    UEIQuicksetSDKLeTV \
-    org.simalliance.openmobileapi
+    qdcm_calib_data_mdss_dsi_s6d6fa1_1080p_video
