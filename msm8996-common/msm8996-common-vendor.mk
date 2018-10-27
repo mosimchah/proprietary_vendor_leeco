@@ -525,4 +525,6 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    TimeService
+    TimeService \
+    LetvRemoteControl_preinstall \
+    UEIQuicksetSDKLeTV
