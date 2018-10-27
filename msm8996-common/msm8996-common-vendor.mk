@@ -521,6 +521,8 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     uceShimService \
     CNEService \
+    LetvRemoteControl_preinstall \
+    UEIQuicksetSDKLeTV \
     com.qualcomm.location \
     dpmserviceapp \
     ims \
