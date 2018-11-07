@@ -102,12 +102,14 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
+    vendor/leeco/msm8996-common/proprietary/vendor/bin/iop:$(TARGET_COPY_OUT_VENDOR)/bin/iop \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/leeco/msm8996-common/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/leeco/msm8996-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
@@ -150,6 +152,20 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@1.0-service.rc \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile0.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile1.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile10.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile11.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile11.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile12.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile2.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile3.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile3.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile4.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile5.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile5.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile6.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile7.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile7.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile8.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile8.conf \
+    vendor/leeco/msm8996-common/proprietary/vendor/etc/perf-profile9.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf-profile9.conf \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/perf/gamedwhitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/gamedwhitelist.xml \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
     vendor/leeco/msm8996-common/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
@@ -240,11 +256,15 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-at.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-at.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-iop-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iop-client.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-iop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iop.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib/libqti_performance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti_performance.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
@@ -434,6 +454,9 @@ PRODUCT_COPY_FILES += \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqti-at.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-at.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqti-iop-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iop-client.so \
+    vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqti-iop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iop.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
     vendor/leeco/msm8996-common/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
